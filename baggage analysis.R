@@ -85,17 +85,16 @@ get_features(test_data1) # "Prediction makes no sense"
 get_features(test_data2)  # "length" "width"  "type"  
 
 
+# ==============================================================================
+# Predicting baggage prohibition
+# ==============================================================================
+
+
 # information about the baggage already inspected
 test_data <- read.csv("https://stepic.org/media/attachments/course/524/test_data_passangers.csv")
 
 # information about new baggage that is being scanned
 data_for_predict <- read.csv("https://stepic.org/media/attachments/course/524/predict_passangers.csv")
-
-
-# ==============================================================================
-# Predicting baggage prohibition
-# ==============================================================================
-
 
 # this function returns name(s) of the owner(s) of the most suspicious baggage so they can be called for an additional check. 
 # baggage is considered suspicious if the predicted probability if greater than 0.7
@@ -117,4 +116,3 @@ most_suspicious <- function(test_data, data_for_predict){
 }
 
 most_suspicious(test_data, data_for_predict) # "Ivan" "Polina" "Svetozar"
-
