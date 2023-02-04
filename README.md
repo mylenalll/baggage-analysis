@@ -17,4 +17,23 @@ I have several data sets of the following structure.
 
 ## Plotting 
 I was curious to look at the graphical presentation to compare **test_data1** and **test_data2**, and inside of each data set compare parameters of prohibited and not prohibited baggage. 
+
 ![](baggage_project_plots/length.png)
+![](baggage_project_plots/weight.png)
+![](baggage_project_plots/width.png)
+![](baggage_project_plots/type.png)
+
+
+## Predicting 
+
+In the second part of the project, I use a data set of a similar structure to predict whether baggage that is being scanned now is going to be prohibited.
+
+The table about the new baggage looks like this:
+
+| weight | length | width | type     | passanger |
+|--------|--------|-------|----------|-----------|
+| 95     | 54     | 19    | Suitcase | Vsevolod  |
+| 80     | 59     | 19    | Suitcase | Vilimir   |
+| 70     | 53     | 22    | Bag      | Svetozar  |
+
+The **most_suspicious** function creates a model on test data and uses this model to predict on new data. A new column of predicted valuables is being added to the new dataset. If a value is higher than 0.7 (the borderline was chosen manually), the owner of this baggage is called to an additional check.
