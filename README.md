@@ -13,3 +13,8 @@ I have several data sets of the following structure.
 | Yes           | 84     | 54     | 20    | Suitcase |
 
 **test_data1** and **test_data2** are being used to test the **get_features** function, which returns a list of significant predictors in the data. Turned out, there aren't any in **test_data1**, but there are some in **test_data2**. 
+
+
+## Plotting 
+I was curious to look at the graphical presentation to compare **test_data1** and **test_data2**, and inside of each data set compare parameters of prohibited and not prohibited baggage. 
+![](baggage_project_plots/length.png)
