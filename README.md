@@ -4,11 +4,11 @@ The purpose of this project is to demonstrate the ability to distinguish signifi
 
 ## Skills demonstrated 
 
-- predictive analysis
-- selection of significant and insignificant predictors using **anova**
-- use of **logit regression** for categorical variable predictions 
-- plotting with **ggplot2**
-- commenting code so that it can be understood by others
+* predictive analysis
+* selection of significant and insignificant predictors using **anova**
+* use of **logit regression** for categorical variable predictions 
+* plotting with **ggplot2**
+* commenting code so that it can be understood by others
 
 ## The data
 
@@ -45,3 +45,9 @@ The table about the new baggage looks like this:
 | 70     | 53     | 22    | Bag      | Svetozar  |
 
 The **most_suspicious** function creates a model on test data and uses this model to predict on new data. A new column of predicted valuables is being added to the new dataset. If a value is higher than 0.7 (the borderline was chosen manually), the owner of this baggage is called to an additional check.
+
+
+# Notes
+The data was taken from the educational course of the Bioinformatics Institute https://stepik.org/course/524/info
+**R** version 4.2.1
+**ggplot2** version 3.3.6
