@@ -2,6 +2,14 @@
 
 The purpose of this project is to demonstrate the ability to distinguish significant predictors in data and predict the value of the categorical variable. 
 
+## Skills demonstrated 
+
+- predictive analysis
+- selection of significant and insignificant predictors using **anova**
+- use of **logit regression** for categorical variable predictions 
+- plotting with **ggplot2**
+- commenting code so that it can be understood by others
+
 ## The data
 
 I have several data sets of the following structure. 
